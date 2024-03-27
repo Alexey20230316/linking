@@ -6,18 +6,18 @@ struct point {
 	double m_y;
 	point(double x, double y) {
 		m_x = x;
-		m_y = y; //  лексическая - вместо m_y  было y
+		m_y = y; //  Р»РµРєСЃРёС‡РµСЃРєР°СЏ - РІРјРµСЃС‚Рѕ m_y  Р±С‹Р»Рѕ y
 	}
-};  // после обьявления структуры не было ; синтаксическая ошибка
+};  // РїРѕСЃР»Рµ РѕР±СЊСЏРІР»РµРЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ РЅРµ Р±С‹Р»Рѕ ; СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєР°СЏ РѕС€РёР±РєР°
 
 void print_point(const point& point_object) {
 	std::cout << "x:" << point_object.m_x << ", y: " << point_object.m_y << std::endl;
 }
 
-int main()  // было с большой буквы
+int main()  // Р±С‹Р»Рѕ СЃ Р±РѕР»СЊС€РѕР№ Р±СѓРєРІС‹
 {
 	int i;
-	for (i = 0; i < 5; i++) {  // точка с зспятой после условия
+	for (i = 0; i < 5; i++) {  // С‚РѕС‡РєР° СЃ Р·СЃРїСЏС‚РѕР№ РїРѕСЃР»Рµ СѓСЃР»РѕРІРёСЏ
 		point my_point(i, 2 * i);
 		print_point(my_point);
 	}
@@ -27,4 +27,4 @@ int main()  // было с большой буквы
 //void print_point(const point& point_object) {
 //	std::cout << "x:" << point_object.m_x << ", y: "
 //		<< point_object.m_y << std::endl;
-//}  лишняя реализация функции
+//}  Р»РёС€РЅСЏСЏ СЂРµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё
